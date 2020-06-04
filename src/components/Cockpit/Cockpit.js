@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import classes from './Cockpit.css'
 const cockpit = (props) => {
+    useEffect(()=>{
+        console.log('cockpit called')
+    },[])
     let btnClass=classes.Green;
     if(props.showPersons){
         btnClass = classes.Red;
